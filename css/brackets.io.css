@@ -647,14 +647,14 @@ blockquote p {
 only screen and (min-device-pixel-ratio: 2) {
     #hero {
         /* Reference the 2x Sprite */
-        background-image: url(../img/hero@2x.png);
+/*        background-image: url(../img/hero@2x.png);*/
         /* Translate the 2x sprite's dimensions back to 1x */
         background-size: 563px 288px;
     }
 
     #content {
         /* Reference the 2x Sprite */
-        background-image: url(../img/bg-brackey-bot@2x.jpg);
+/*        background-image: url(../img/bg-brackey-bot@2x.jpg);*/
         /* Translate the 2x sprite's dimensions back to 1x */
         background-size: 215px 336px;
     }
