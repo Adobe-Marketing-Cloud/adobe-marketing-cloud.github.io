@@ -611,7 +611,7 @@ blockquote p {
 }
 
 .brackets-logo i {
-    background: url(../img/amc/amc-icon.png) no-repeat 0 0;
+    background: url(../img/amc/mac.png) no-repeat 0 0;
 }
 
 .github-icon {
@@ -659,7 +659,7 @@ only screen and (min-device-pixel-ratio: 2) {
         background-size: 215px 336px;
     }
 
-    .brackets-logo i,
+/*    .brackets-logo i,*/
     #hamburger,
     .github-icon,
     .mail-icon,
@@ -694,6 +694,9 @@ div#hero div p {
 }
 #featured {
     padding-top: 60px;
+}
+#featured h2 {
+    margin-left: 12px;
 }
 .row .columns h3 {
     font-weight: 600;

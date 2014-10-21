@@ -51,6 +51,20 @@ filter: none;
 }
 </style>
 <![endif]-->
+    
+    <script>
+        function toggleTag(checkbox) {
+            var displayValue = "none";
+            if (checkbox.checked) {
+                displayValue = "block";
+            }
+            var myList = document.getElementsByClassName(checkbox.name);
+            for (var i = 0; i < myList.length; i++) {
+                myList[i].style.display = displayValue;
+            }
+        }
+    </script>
+    
 </head>
 
 <body>
@@ -95,60 +109,32 @@ filter: none;
             <div class="large-12 columns">
                 <h1>Open Development Network</h1>
                 <p data-i18n="index.page.hero.description">SDKs, Tools and Code Samples for Adobe Marketing Cloud developers. Open Source.</p>
-                <!--div id="download">
-                    <a id="hero-cta-button" href="https://github.com/adobe/brackets/releases/latest" class="large rounded radius button"><div data-i18n="index.page.hero.download">Download Brackets</div>
-                        <span id="download-version" class="nowrap" data-i18n="index.page.hero.latest-release">Latest Release</span>
-                    </a>
-                    <div id="os-alert" class="alert-box radius" data-alert>
-
-                    </div>
-                    <p>
-                        <a id="other-downloads" href="https://github.com/adobe/brackets/releases" data-i18n="index.page.hero.other-downloads">Other Downloads</a>
-                        <a data-reveal-id="system-requirements" href="#" data-i18n="index.page.hero.requirements">Requirements</a>
-                        <a data-reveal-id="installation-instructions" href="#" data-i18n="index.page.hero.installation">Installation</a>
-                    </p>
-                </div-->
             </div>
         </div>
     </div>
-
-    <!--div id="sub-hero-wrapper">
-        <div id="sub-hero" class="row">
-            <div class="large-3 columns">
-                <h2 data-i18n="index.page.sub-hero.live-html.header">Live HTML Development</h2>
-                <p><span data-i18n="index.page.sub-hero.live-html.content">As you code, HTML changes are instantly pushed to browser without having to save or reload the page.</span>
-                    <br>
-                    <a href="http://youtu.be/Nhvj1NYC3Uc" data-i18n="index.page.sub-hero.live-html.more" data-yt-id="Nhvj1NYC3Uc">See it in action.</a>
-                </p>
-            </div>
-            <div class="large-3 columns">
-                <h2 data-i18n="index.page.sub-hero.theseus.header">JS Debugging with Theseus</h2>
-                <p><span data-i18n="index.page.sub-hero.theseus.content">Theseus makes inspecting variables and control flow easy, even in asynchronous code.</span>
-                    <br>
-                    <a href="http://blog.brackets.io/2013/08/28/theseus-javascript-debugger-for-chrome-and-nodejs/" data-i18n="index.page.sub-hero.theseus.more">Learn more.</a>
-                </p>
-            </div>
-            <div class="large-3 columns">
-                <h2 data-i18n="index.page.sub-hero.linux.header">Linux: New &amp; Improved</h2>
-                <p><span data-i18n="index.page.sub-hero.linux.content">Over the last few releases we’ve made progress on Linux (Debian/Ubuntu) support for Brackets.</span>
-                    <br>
-                    <a href="https://github.com/adobe/brackets/wiki/Linux-Version" data-i18n="index.page.sub-hero.linux.more">Check it out.</a>
-                </p>
-            </div>
-            <div class="large-3 columns">
-                <h2 data-i18n="index.page.sub-hero.dev.header">Effective Development</h2>
-                <p><span data-i18n="index.page.sub-hero.dev.content">Imagine the ability to fluently edit external styles and code without even leaving your document!</span>
-                    <br>
-                    <a href="http://dev.brackets.io/preso/intro/assets/features/brackets-quick-edit-js.PNG" data-i18n="index.page.sub-hero.dev.more">See how it looks.</a>
-                </p>
-            </div>
-        </div>
-    </div-->
+    
+    <div class="row" style="position:fixed;top:100px;left:20px;width:200px;">
+        <form>
+            <ul>
+                <li>
+                    <input type="checkbox" checked name="tag-AEM" onclick="toggleTag(this)" /><label>AEM</label>
+                </li>
+                <li>
+                    <input type="checkbox" checked name="tag-Mobile" onclick="toggleTag(this)" /><label>Mobile</label>
+                </li>
+                <li>
+                    <input type="checkbox" checked name="tag-Analytics" onclick="toggleTag(this)" /><label>Analytics</label>
+                </li>
+                <li>
+                    <input type="checkbox" checked name="tag-Sightly" onclick="toggleTag(this)" /><label>Sightly</label>
+                </li>
+            </ul>
+        </form>
+    </div>
 
     <div id="featured" class="row">
-        <div class="large-4 columns">
-            
             <h2>Top Repositories</h2>
+        <div class="large-4 columns">
             
             <a href="https://github.com/Adobe-Marketing-Cloud/tools" target="_blank">
             <h3>Tools</h3>
@@ -158,19 +144,17 @@ filter: none;
         </div>
         <div class="large-4 columns">
             
-            
             <a href="https://github.com/Adobe-Marketing-Cloud/mobile-services" target="_blank">
-            <h2 style="color:#fff;">Top Repositories</h2>
             <h3>Mobile Services</h3>
                 <img src="img/amc/mobile.jpg"/>
             </a>
             <p>Allows you to access capabilities across Adobe Analytics, Adobe Target, and Adobe Media Optimizer. Implement lifecycle data in less than five minutes.</p>
+            
         </div>
         <div class="large-4 columns">
             
             
             <a href="https://github.com/Adobe-Consulting-Services/acs-aem-tools" target="_blank">
-            <h2 style="color:#fff;">Top Repositories</h2>
             <h3>AEM Authoring Extensions</h3>
                 <img src="img/amc/coralui.png"/>
             </a>
@@ -209,91 +193,102 @@ filter: none;
             </a>
             <p>R package to access Adobe (Omniture) SiteCatalyst Reporting API</p>
             
-            <h2>Mobile</h2>
+            <section class="tag-Mobile">
+                <h2>Mobile</h2>
 
-            <a href="https://github.com/Adobe-Marketing-Cloud/mobile-services" target="_blank">
-                <h3>Mobile Services</h3>
-            </a>
-            <p>Native Mobile SDKs, dev tools and example apps.</p>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/cordova-zip-plugin" target="_blank">
-                <h3>Apache Cordova ZIP Plugin</h3>
-            </a>
-            <p>Zip plugin for Cordova apps</p>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/mobile-services-phonegap" target="_blank">
-                <h3>Mobile Services PhoneGap</h3>
-            </a>
-            <p>PhoneGap plugin for PGB</p>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit" target="_blank">
-                <h3>AEM PhoneGap Starter Kit</h3>
-            </a>
-            <p>Bootstrap your AEM Apps project </p>
+                <a href="https://github.com/Adobe-Marketing-Cloud/mobile-services" target="_blank">
+                    <h3>Mobile Services</h3>
+                </a>
+                <p>Native Mobile SDKs, dev tools and example apps.</p>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/cordova-zip-plugin" target="_blank">
+                    <h3>Apache Cordova ZIP Plugin</h3>
+                </a>
+                <p>Zip plugin for Cordova apps</p>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/mobile-services-phonegap" target="_blank">
+                    <h3>Mobile Services PhoneGap</h3>
+                </a>
+                <p>PhoneGap plugin for PGB</p>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit" target="_blank">
+                    <h3>AEM PhoneGap Starter Kit</h3>
+                </a>
+                <p>Bootstrap your AEM Apps project </p>
+            </section>
 
         </div>
         <div class="large-4 columns">
             
-            <h2>AEM Developer Tools</h2>
+            <section class="tag-AEM">
+                <h2>AEM Developer Tools</h2>
 
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-eclipse-developer-tools" target="_blank">
-                <h3>AEM Eclipse Developer Tools</h3>
-            </a>
-            <p>The Eclipse plugin that brings you the full connection to the Adobe Experience Manager, with auto-sync and project creation wizard.</p>
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-eclipse-developer-tools" target="_blank">
+                    <h3>AEM Eclipse Developer Tools</h3>
+                </a>
+                <p>The Eclipse plugin that brings you the full connection to the Adobe Experience Manager, with auto-sync and project creation wizard.</p>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension" target="_blank">
+                    <h3>AEM Sightly Brackets extension</h3>
+                </a>
+                <p>Brackets extension for AEM front-end developers with auto-sync and Sightly support.</p>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample" target="_blank">
+                    <h3>AEM maintenance task sample</h3>
+                </a>
+                <p>Sample Maintenance Task for AEM 6.0</p>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-project-archetype" target="_blank">
+                    <h3>AEM Project Archetype</h3>
+                </a>
+                <p>Maven template to create a new AEM project as starting point to develop your own functionality. </p>
+
+                <article class="tag-Sightly">
+                    <a href="https://github.com/Adobe-Marketing-Cloud/sightly-spec" target="_blank">
+                        <h3>Sightly Specifications</h3>
+                    </a>
+                    <p>Sightly Web Templating Language Specification</p>
+                </article>
+
+                <article class="tag-Sightly">
+                    <a href="https://github.com/Adobe-Marketing-Cloud/aem-sightly-repl" target="_blank">
+                        <h3>AEM Sightly Repl</h3>
+                    </a>
+                    <p>Read–Eval–Print Loop environment for Sightly. </p>
+                </article>
+            </section>
             
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension" target="_blank">
-                <h3>AEM Sightly Brackets extension</h3>
-            </a>
-            <p>Brackets extension for AEM front-end developers with auto-sync and Sightly support.</p>
             
-            <a href="https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample" target="_blank">
-                <h3>AEM maintenance task sample</h3>
-            </a>
-            <p>Sample Maintenance Task for AEM 6.0</p>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-project-archetype" target="_blank">
-                <h3>AEM Project Archetype</h3>
-            </a>
-            <p>Maven template to create a new AEM project as starting point to develop your own functionality. </p>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/sightly-spec" target="_blank">
-                <h3>Sightly Specifications</h3>
-            </a>
-            <p>Sightly Web Templating Language Specification</p>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-sightly-repl" target="_blank">
-                <h3>AEM Sightly Repl</h3>
-            </a>
-            <p>Read–Eval–Print Loop environment for Sightly. </p>
-            
-            <h2>AEM Social Component Framework</h2>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension" target="_blank">
-                <h3>AEM SCF sample: component extension</h3>
-            </a>
-            <p>Sample package for AEM Social Communities - Social Component Framework (SCF). Examples of extending Communities components to build a new social component. </p>
-            
-            <h2>AEM Authoring Extensions</h2>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-layer-msm" target="_blank">
-                <h3>AEM authoring extension: MSM</h3>
-            </a>
-            <p>Sample package for AEM 6 page authoring. Creating a new layer for MSM view.</p>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites" target="_blank">
-                <h3>AEM authoring extension: Header 'Back to sites'</h3>
-            </a>
-            <p>Sample package for AEM 6 page authoring. Creating a custom header action to jump back to Sites administration. </p>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr" target="_blank">
-                <h3>AEM authoring extension: Assetfinder Flickr</h3>
-            </a>
-            <p>Sample package for AEM6 page authoring. Creating a new Assetfinder group to load Flickr images </p>
-            
-            <a href="https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot" target="_blank">
-                <h3>AEM authoring extension: Toolbar Screeshot</h3>
-            </a>
-            <p>Sample package for AEM 6 page authoring. Creating a custom toolbar action to render components.</p>
+            <section class="tag-AEM">
+                <h2>AEM Social Component Framework</h2>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension" target="_blank">
+                    <h3>AEM SCF sample: component extension</h3>
+                </a>
+                <p>Sample package for AEM Social Communities - Social Component Framework (SCF). Examples of extending Communities components to build a new social component. </p>
+
+                <h2>AEM Authoring Extensions</h2>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-layer-msm" target="_blank">
+                    <h3>AEM authoring extension: MSM</h3>
+                </a>
+                <p>Sample package for AEM 6 page authoring. Creating a new layer for MSM view.</p>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites" target="_blank">
+                    <h3>AEM authoring extension: Header 'Back to sites'</h3>
+                </a>
+                <p>Sample package for AEM 6 page authoring. Creating a custom header action to jump back to Sites administration. </p>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr" target="_blank">
+                    <h3>AEM authoring extension: Assetfinder Flickr</h3>
+                </a>
+                <p>Sample package for AEM6 page authoring. Creating a new Assetfinder group to load Flickr images </p>
+
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot" target="_blank">
+                    <h3>AEM authoring extension: Toolbar Screeshot</h3>
+                </a>
+                <p>Sample package for AEM 6 page authoring. Creating a custom toolbar action to render components.</p>
+            </section>
 
             <p>
             </p>
