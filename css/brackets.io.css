@@ -28,10 +28,9 @@ h6 {
 }
 
 h1 {
-    font-size: 2.125em;
+    font-size: 2.2em;
     font-family: adobe-clean,"HelveticaNeue-light","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 200;
-    line-height: 1.4em;
 }
 
 h2 {
@@ -268,12 +267,11 @@ blockquote p {
 
 #hero {
     color: #fff;
-    height: 295px;
+    height: 245px;
 }
 
 #hero h1 {
     color: #fff;
-    font-size: 3em;
     margin: 0;
     padding: 1.5em 0 0;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
@@ -607,7 +605,7 @@ blockquote p {
 }*/
 
 #content {
-    background: url(../img/bg-brackey-bot.jpg) no-repeat 750px bottom;
+/*    background: url(../img/bg-brackey-bot.jpg) no-repeat 750px bottom;*/
 }
 
 .brackets-logo i {
@@ -688,7 +686,7 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 
 div#hero div p {
-    font-size: 1.4em;
+    font-family: adobe-clean,"HelveticaNeue-light","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
     width: 550px;
     line-height: 1.4em;
 }
