@@ -196,7 +196,7 @@ blockquote p {
 
 .brackets-logo a {
     color: #000;
-    font-size: 25px;
+    font-size: 0.65em;
     font-weight: 400;
     text-decoration: none;
     vertical-align: middle;
@@ -267,12 +267,13 @@ blockquote p {
 
 #hero {
     color: #fff;
-    height: 245px;
+/*    height: 245px;*/
+    padding-bottom: 30px;
 }
 
 #hero h1 {
     color: #fff;
-    margin: 0;
+/*    margin: 0;*/
     padding: 1.5em 0 0;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
 }
@@ -343,7 +344,7 @@ blockquote p {
 }
 
 #sub-hero-wrapper {
-    background: #2fa7fc;
+/*    background: #2fa7fc;*/
     -webkit-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.12);
     box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.12);
     padding: 40px 0;
@@ -396,6 +397,7 @@ blockquote p {
     border-radius: 3px;
     margin-right: 3px;
     width: 27px;
+    box-shadow: none;
 }
 
 
@@ -593,7 +595,7 @@ blockquote p {
     background: url(../img/sprite.png) no-repeat -37px 3px;
 }
 
-#hero-wrapper {
+#hero-wrapper, #sub-hero-wrapper {
 /*    background: url(../img/amc/Summit-2.jpg) no-repeat left -350px;*/
 /*    background-image: url('../img/amc/grid_masked_light.png'), linear-gradient(to bottom, #384042, #46494C);*/
 /*    background-image: url('../img/amc/grid_masked_dark.png'), linear-gradient(to bottom, #4D74B3, #5784CB);*/
@@ -696,8 +698,8 @@ div#hero div p {
 .row .columns h3 {
     font-weight: 600;
 }
-.row .columns img {
-    margin: -10px 0 15px 0;
+#featured img {
+    margin: 10px 0 15px 0;
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
 }
 #adobe-tag {
@@ -725,4 +727,7 @@ div#hero div p {
 }
 a:hover {
     text-decoration: underline;
+}
+a h3 {
+    color: #0170C1;
 }
