@@ -746,7 +746,6 @@ a h3 {
 #tag-select ul li {
     float:left;
     list-style: none;
-    height:40px;
     padding: 5px 10px;
     border: 1px solid #c3c3c3;
     background:#fff;
