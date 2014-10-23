@@ -91,15 +91,13 @@ filter: none;
                 var classValue = element.classList[i];
                 if (classValue.indexOf("tag-") == 0) {
                     var tag = classValue.substring(4);
-                    if (hash.split(",").indexOf(tag) >= 0/*hash.indexOf(tag) > 0*/) {
-                        var hashArray = hash.split(",");
-//                        hashArray = hashArray.splice(hashArray.indexOf(tag), hashArray.length-1);
+                    var hashArray = hash.split(",");
+                    if (hashArray.indexOf(tag) >= 0) {
                         hashArray.splice(hashArray.indexOf(tag), 1);
-                        hash = hashArray.join();
-//                        hash = hash.replace("," + tag, "");
                     } else {
-                        hash = hash + "," + tag;
+                        hashArray.push(tag);
                     }
+                    hash = hashArray.join();
                 }
             }
             window.location.hash = hash;
