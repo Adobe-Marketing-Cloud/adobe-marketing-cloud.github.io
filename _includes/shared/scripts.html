@@ -1,0 +1,40 @@
+    <script src="js/vendor/custom.modernizr.js"></script>
+
+    <!-- Source Sans Pro - Regular, Italic, Semibold -->
+    <script src="//use.edgefonts.net/source-sans-pro:n4,n6,i4;source-code-pro:n4.js"></script>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/i18next.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/youtube-modal.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+
+    <script src="js/tags.js"></script>
+
+    <script>
+        var ext = "";
+        var OS = "UNKNOWN";
+        if (/Windows|Win32|WOW64|Win64/.test(navigator.userAgent)) {
+            OS = "WIN";
+            ext = ".msi";
+        } else if (/Mac/.test(navigator.userAgent)) {
+            OS = "OSX";
+            ext = ".dmg";
+        } else if (/Linux|X11/.test(navigator.userAgent)) {
+            OS = "LINUX32";
+            ext = ".32-bit.deb";
+            if (/x86_64/.test(navigator.appVersion + navigator.userAgent)) {
+                OS = "LINUX64";
+                ext = ".64-bit.deb";
+            }
+        }
+        if (/iPad|iPod|iPhone|Android/.test(navigator.userAgent)) {
+            OS = "OTHER";
+            $("#download").hide();
+        }
+    </script>
+
+    <script src="js/load.i18next.js"></script>
