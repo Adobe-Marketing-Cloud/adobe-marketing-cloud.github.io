@@ -1,6 +1,6 @@
-[brackets.io][1]
+[opendev.adobe.com][1]
 ===========
 
-[brackets.io website][1]
+[opendev.adobe.com website][1]
 
-[1]: http://brackets.io/
+[1]: http://opendev.adobe.com/

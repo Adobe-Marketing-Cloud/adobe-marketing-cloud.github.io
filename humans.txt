@@ -1,4 +1,4 @@
-/* Thanks zurb.com */
+/* Thanks brackets.io, design by zurb.com, modified */
 /* humanstxt.org */
 
 /* SITE */
