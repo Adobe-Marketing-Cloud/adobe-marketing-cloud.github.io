@@ -1,10 +1,14 @@
 function filterTags() {
     var hash = window.location.hash;
-    if (!hash || hash.indexOf("!tags:") < 0 || hash.indexOf("!tags:") == (hash.length - 6)) {
+    if (!hash || hash.indexOf("!tags:") < 0) {
         return;
     } else {
-        var hashValue = hash.substring(7);
         var taggedElements = document.getElementsByClassName('tagged');
+        if (hash.indexOf("!tags:") == (hash.length - 6)) {
+            showTaggedElements(taggedElements);
+            return;
+        }
+        var hashValue = hash.substring(7);
         for (var i = 0; i < taggedElements.length; i++) {
             taggedElements[i].style.display = 'none';
         }
@@ -15,13 +19,11 @@ function filterTags() {
         var tags = hashValue.split(",");
         for (var i = 0; i < tags.length; i++) {
             var thisTaggedElements = document.getElementsByClassName('tag-' + tags[i]);
-            for (var j = 0; j < thisTaggedElements.length; j++) {
-                thisTaggedElements[j].style.display = 'block';
-                thisTaggedElements[j].classList.add("tags-on");
-            }
+            showTaggedElements(thisTaggedElements);
         }
     }
 }
+
 function toggleTag(element) {
     var hash = window.location.hash;
     for (var i = 0; i < element.classList.length; i++) {
@@ -43,4 +45,11 @@ function toggleTag(element) {
     window.location.hash = hash;
     element.classList.toggle("tags-on");
     filterTags();
+}
+
+function showTaggedElements(taggedElements) {
+    for (var i = 0; i < taggedElements.length; i++) {
+        taggedElements[i].style.display = 'block';
+        taggedElements[i].classList.add("tags-on");
+    }
 }

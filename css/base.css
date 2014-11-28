@@ -7,7 +7,7 @@ html {
 
 body {
     color: #686868;
-    font-family: source-sans-pro, sans-serif;
+    font-family: adobe-clean-semilight, source-sans-pro, sans-serif;
     font-weight: 500;
 }
 
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: source-sans-pro, sans-serif;
+    font-family: adobe-clean-semiligh, source-sans-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
@@ -29,7 +29,7 @@ h6 {
 
 h1 {
     font-size: 2.2em;
-    font-family: adobe-clean,"HelveticaNeue-light","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: adobe-clean-semilight,"HelveticaNeue-light","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 200;
 }
 
@@ -275,12 +275,14 @@ blockquote p {
     color: #fff;
 /*    margin: 0;*/
     padding: 1.5em 0 0;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+/*    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);*/
+    font-family:adobe-clean-semilight;
+    font-size:3rem;
 }
 
 #hero p {
     font-size: 1.3em;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+/*    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);*/
     width: 480px;
     line-height: 1.6em;
 }
@@ -346,8 +348,9 @@ blockquote p {
 #sub-hero-wrapper {
 /*    background: #2fa7fc;*/
     -webkit-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.12);
-    box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.12);
-    padding: 40px 0;
+/*    box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.12);*/
+    padding: 40px 0 20px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 #sub-hero,
@@ -421,6 +424,7 @@ blockquote p {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f4f4f4',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
     border-top: 1px solid #eee;
+    margin-top: 40px;
 }
 
 #about p {
@@ -677,7 +681,7 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 
 div#hero div p {
-    font-family: adobe-clean,"HelveticaNeue-light","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: adobe-clean-semilight,"HelveticaNeue-light","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
     width: 100%;
 /*    width: 550px;*/
     line-height: 1.4em;
@@ -689,7 +693,7 @@ div#hero div p {
     margin-left: 12px;
 }
 .row .columns h3 {
-    font-weight: 600;
+    font-weight: 500;
 }
 #featured img {
     margin: 10px 0 15px 0;
@@ -737,19 +741,22 @@ a h3 {
     float:left;
     list-style: none;
     padding: 5px 10px;
-    border: 1px solid #c3c3c3;
+    border: 1px solid #94D0FF;
     background:#fff;
     margin-right: 5px;
     margin-bottom: 5px;
+    border-radius: 3px;
 }
 #tag-select ul li.tags-on {
-    background:#c3c3c3;
+/*    background:#c3c3c3;*/
+    background-color:#2098F5;
 }
 #tag-select ul li.tags-on a {
     background:url(../img/amc/close-icon.png) no-repeat 0 6px;
-    padding-left:17px;
+    padding-left:20px;
     margin-left:5px;
-    color:#000;
+/*    color:#000;*/
+    color:#fff;
 }
 #tag-select h4 {
     font-weight: 600;
@@ -785,7 +792,7 @@ code {
 
 .blog-menu a {
     color: #000000;
-    font: 300 18px / 36px source-sans-pro, sans-serif;
+    font: 300 18px / 36px adobe-clean-semilight, source-sans-pro, sans-serif;
 }
 
 .blog-menu a:hover,
@@ -814,7 +821,7 @@ code {
 
 #blog-content .post p {
     color: #77797c;
-    font: 400 18px / 30px source-sans-pro, sans-serif;
+    font: 400 18px / 30px adobe-clean-semilight, source-sans-pro, sans-serif;
 }
 
 #blog-content ol,
@@ -931,4 +938,39 @@ button.secondary:focus,
 
 .blog-row {
     max-width:120rem;
+}
+.row {
+    max-width: 82.5rem;
+}
+
+@media only screen and (min-width: 64.063em) {
+    #content .columns {
+        -moz-column-count: 3;
+    }
+}
+@media only screen and (min-width: 50.063em) and (max-width: 64.063em) {
+    #content .columns {
+        -moz-column-count: 2;
+    }
+}
+@media only screen and (min-width: 50.063em) {
+    #content .columns section {
+        display: inline-block;
+    }
+}
+#content .columns section {
+    margin-bottom:20px;
+}
+
+.intro p {
+    color: #4D4D4D;
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 42px;
+/*    margin: 0px auto 0px;*/
+}
+#blog-content {
+    padding-left:0;
+}#blog-content .columns .row {
+    padding:7px;
 }
