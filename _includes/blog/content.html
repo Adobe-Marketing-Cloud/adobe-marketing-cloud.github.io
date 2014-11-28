@@ -1,44 +1,40 @@
+{% include blog/hero-wrapper.html %}
+
 <div id="sub-hero-wrapper">
     <div id="blog-content" class="row blog-row">
         <div class="large-10 columns collapse content">
+            
+            
+            {% for post in site.posts %}
+            
+            
             <div class="row">
                 <div class="post-info medium-3 large-3 columns">
-                    <span class="post-date"><a href="http://blog.brackets.io/2014/10/21/getting-ready-to-declare-brackets-1-0/">October 21, 2014</a></span>
-                    <span class="post-author"><a href="">Ryan Stewart</a></span>
+                    <span class="post-date"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %-d, %Y" }}</a></span>
+                    <span class="post-author"><a href="">{{ post.author }}</a></span>
 
                     <span class="category post-tags news"><a href="http://blog.brackets.io/category/news/">news</a></span>
                 </div>
                 <div class="post medium-9 large-9 columns">
-                    <h1><a href="http://blog.brackets.io/2014/10/21/getting-ready-to-declare-brackets-1-0/">Getting Ready to Declare Brackets 1.0</a></h1>
-                    <p>It’s been almost 3 years since the first commit for Brackets landed. In that time we’ve gone from a small project to one of the most popular repositories on GitHub and what we think is the best code editor for web designers and front end developers. We’re excited to see that a lot of you agree! We’ve had <a href="https://github.com/adobe/brackets/graphs/contributors">240 contributors</a> over that time, each new release gets over 100,000 downloads, and our extension registry contains 439 extensions and 75 themes. Most of those have been created by you and have helped make Brackets a fantastic tool. Thanks!</p>
-                    <p>Over the past three years the team and community have worked on a combination of “core” editor features as well as innovative features for web development like Live Preview and Quick Edit. We all love innovative features, but a good code editor needs to have a solid foundation too. We think we’ve now got a great balance of both and want to make it clear that Brackets is a tool that you can use for every day work.</p>
-                    <p>As a symbol of that, we’re going to be declaring the next release, which will be our 45th, the 1.0 release of Brackets. We’ll be pushing that release live at the <a href="https://futureofwebdesign.com/nyc-2014/">Future of Web Design</a> in NYC in November.</p>
-                    <h2>The Future of Brackets</h2>
-                    <p>With Brackets hitting 1.0, we’re still committed to releasing every 3-4 weeks and adding great features. There are still things we want to do in terms of core features, but going forward we want to spend the majority of our time adding innovative features for web designers and front end developers.</p>
-                    <p>After releasing 1.0, the core Adobe team is also going to slightly change what kinds of innovative features we focus on. We think that Brackets is a great editor for all kinds of web development and extensions help support a variety of languages and general web features. So post-1.0, the Adobe developers are going to be more focused on features that support design-oriented coding tasks. As a team we’ve been looking at how we can use our expertise at Adobe to give users a great code editing experience. One area we’ve identified is an unmet need for a coding tool that supports design. We think a lot of front end developers and web designers are doing work to implement designs and the core team wants to build the perfect editor for them. Some of the early feature ideas are about improving preprocessor workflows, making SVG editing more powerful, and adding more visual inline editors.</p>
-                    <p>We will of course continue to maintain the core code base as well as implement important core features. We are also committed to supporting the the extension ecosystem so it will always be a great general purpose editor for the web. But we’re particularly excited about the prospect of making Brackets the best code editor for doing design-oriented coding with
-                        <br>CSS, HTML, and JS.</p>
-                    <h2>Thank You</h2>
-                    <p>We couldn’t have hit 1.0 without our community. It’s been a lot of fun to work with all of you and see the Brackets project grow. The entire team is humbled by how many of you are using it and the time you take to contribute code, file issues, and write extensions. It’s a pleasure to be a part of the Brackets community and we’re all looking forward to continuing to work with you to grow and evolve Brackets.</p>
-                    <p>The entire Brackets team will be at Future of Web Design, so if you’re there, come by. We’ll be at the Adobe booth and would love to get your feedback and hear about your experiences with Brackets.</p>
-                    <p>– The Brackets Team</p>
+                    
+                    <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+                    
+                    <div>{{ post.content | truncatewords:300}}</div>
+                    
+                    <p><a href="{{ post.url }}">Read more...</a></p>
 
-                    <p class="comment-count"><a class="button radius secondary" href="http://blog.brackets.io/2014/10/21/getting-ready-to-declare-brackets-1-0/#comments">36 Responses</a>
+                    <p class="comment-count"><a class="button radius secondary" href="{{ post.url | prepend: site.baseurl }}/#comments">36 Responses</a>
                     </p>
 
                     <hr>
 
                 </div>
             </div>
-
-
-<!--
-            <div id="pagination_links" class="row">
-                <div class="medium-9 medium-offset-3 large-9 large-offset-3">
-                    <a href="http://blog.brackets.io/page/2/"><span class="older_posts">Older Posts</span></a> 
-                </div>
-            </div>
--->
+            
+            
+            {% endfor %}
+            
+            
         </div>
 
         <div class="large-2 columns">

@@ -1,3 +1,15 @@
+{% include shared/hero-wrapper.html %}
+
+<!--div id="sub-hero-wrapper">
+    <div class="intro row">
+        <div class="columns">
+            <p data-i18n="index.page.content.blurb">Open Development is one of the leading principles for Adobe developers. Adobe Marketing Cloud provides a large number of extensibility points to allow customisations and extensions. This space enables collaboration among developers who are building or using product extensions, SDKs, code samples and other useful tools.</p>
+        </div>
+    </div>
+</div-->
+
+{% include home/tag-select.html %}
+
 <div id="content" class="row">
     <div class="columns">
         
@@ -31,6 +43,31 @@
                 <p>Contains the final deliverables for the mobile versions of the VideoHeartbeat wrapper library. </p>
             </article>
         </section>
+            
+        <section class="tagged tag-Marketing-Cloud">
+            <h2 class="tagged tag-General">Marketing Cloud</h2>
+
+            <article class="tagged tag-Marketing-Cloud">
+                <a href="https://github.com/Adobe-Marketing-Cloud/marketing-cloud-php-sdk" target="_blank">
+                    <h3>Marketing Cloud PHP SDK</h3>
+                </a>
+                <p>A simple, Object Oriented wrapper for the Adobe Marketing Cloud APIs written in PHP5. This library is modeled after the php-github-api library built by ornicar</p>
+            </article>
+
+            <article class="tagged tag-Marketing-Cloud">
+                <a href="https://github.com/Adobe-Marketing-Cloud/marketing-cloud-javascript-sdk" target="_blank">
+                    <h3>Marketing Cloud Javascript SDK</h3>
+                </a>
+                <p>A frontend library for calling the Marketing Cloud APIs</p>
+            </article>
+
+            <article class="tagged tag-Marketing-Cloud">
+                <a href="https://github.com/Adobe-Marketing-Cloud/marketing-cloud-node-sdk" target="_blank">
+                    <h3>Marketing Cloud Node.js SDK</h3>
+                </a>
+                <p>NodeJS module for connecting to the Adobe Digital Marketing APIs. Provides both the REST (default) and SOAP clients. Please note this software should be considered as 'alpha' and not used in a production environment </p>
+            </article>
+        </section>
 
         <section>
             <h2 class="tagged tag-Analytics">Analytics</h2>
@@ -39,6 +76,21 @@
                     <h3>RSiteCatalyst</h3>
                 </a>
                 <p>R package to access Adobe (Omniture) SiteCatalyst Reporting API</p>
+            </article>
+            
+            <article class="tagged tag-Analytics">
+                <a href="https://github.com/Adobe-Marketing-Cloud/analytics-realtime-dashboard-example" target="_blank">
+                    <h3>Adobe Analytics Real-Time Dashboard Example</h3>
+                </a>
+                <p>Pull your First Real-Time Report, Make an API request from an HTML Page, Display Real-Time Data, Populate a Table, Add a Trend Line, Add a Doughnut Chart
+</p>
+            </article>
+            
+            <article class="tagged tag-Analytics">
+                <a href="https://github.com/Adobe-Marketing-Cloud/firehose-client-example" target="_blank">
+                    <h3>Firehose Client Example</h3>
+                </a>
+                <p>Firehose Client Example</p>
             </article>
         </section>
 
@@ -71,6 +123,14 @@
                 </a>
                 <p>Bootstrap your AEM Apps project </p>
             </article>
+            
+            <article class="tagged tag-Mobile">
+                <a href="https://github.com/Adobe-Marketing-Cloud/app-sample-android-phonegap" target="_blank">
+                    <h3>Native Android App with Embedded Webview and AEM 6.0</h3>
+                </a>
+                <p>A native Android example running a Cordova (ie. PhoneGap) WebView home page connected to AEM6.</p>
+            </article>
+            
         </section>
         
         <section>
@@ -102,6 +162,27 @@
                     <h3>AEM Project Archetype</h3>
                 </a>
                 <p>Maven template to create a new AEM project as starting point to develop your own functionality. </p>
+            </article>
+
+            <article class="tagged tag-AEM tag-AEM-developer-tools">
+                <a href="https://github.com/Adobe-Marketing-Cloud/cq-java-securecq-maven-plugin" target="_blank">
+                    <h3>AEM SecureCQ Maven Plugin</h3>
+                </a>
+                <p>This is a simple Maven Plugin integration of the Cognifide's SecureCQ, a tool to find the most popular security problems in your CQ instance.</p>
+            </article>
+            
+            <article class="tagged tag-AEM tag-AEM-developer-tools">
+                <a href="https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-designimporter" target="_blank">
+                    <h3>AEM Design Importer Extension</h3>
+                </a>
+                <p>SDK for Adobe Experience Manager (Adobe CQ) to extend the Design Importer. It shows how to implement a TagHandler to map HTML elements to components during import</p>
+            </article>
+            
+            <article class="tagged tag-AEM tag-AEM-developer-tools">
+                <a href="https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout" target="_blank">
+                    <h3>Experience Manager SDK for Multi-site Manager Rollout Configurations (5.6)</h3>
+                </a>
+                <p>Experience Manager SDK for Multi-site Manager Rollout Configurations</p>
             </article>
         </section>
 
@@ -135,6 +216,13 @@
                 </a>
                 <p>This example shows how to build components in AEM 6 with Sightly. It's a feature-complete implementation of the famous TodoMVC exercise.</p>
             </article>
+
+            <article class="tagged tag-AEM tag-Sightly">
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-sightly-ide-api" target="_blank">
+                    <h3>Adobe Sightly IDE API</h3>
+                </a>
+                <p>The Adobe Granite Sightly IDE API bundle provides a JSON description of Sightly Java Use-API Objects stored in the content repository.</p>
+            </article>
         </section>
 
         <section>
@@ -145,6 +233,13 @@
                     <h3>AEM SCF sample: component extension</h3>
                 </a>
                 <p>Sample package for AEM Social Communities - Social Component Framework (SCF). Examples of extending Communities components to build a new social component. </p>
+            </article>
+
+            <article class="tagged tag-AEM tag-AEM-SCF">
+                <a href="https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize" target="_blank">
+                    <h3>AEM SCF sample: component customization</h3>
+                </a>
+                <p>Sample package for AEM Social Communities - Social Component Framework (SCF). Examples of customizing Communities components to achieve a unique user experience.</p>
             </article>
 
             <article class="tagged tag-AEM tag-AEM-SCF">
@@ -188,6 +283,47 @@
                 <h3>AEM authoring extension: Toolbar Screeshot</h3>
             </a>
             <p>Sample package for AEM 6 page authoring. Creating a custom toolbar action to render components.</p>
+            
+            <a href="https://github.com/Adobe-Marketing-Cloud/experiencemanager-seo-extensions" target="_blank">
+                <h3>AEM SEO Extensions (5.6)</h3>
+            </a>
+            <p>The SEO Toolbox provides a UI widget that guides authors to optimize their pages for search engines. Since the list of potential criteria for SEO can be arbitrarily long, the SEO Toolbox is built with pluggability in mind. Each plugin, called an "SEO Tool" can contribute a number of criteria that an author needs to check and it can provide a UI to help fix any problems that were detected.</p>
+
+            <a href="https://github.com/Adobe-Marketing-Cloud/experiencemanager-clientcontext-samples" target="_blank">
+                <h3>Experience Manager Client Context Samples</h3>
+            </a>
+            <p>Client Context samples for Adobe Experience Manager (Adobe CQ). The Client Context aggregates site visitor information from various sources that can be used for personalization and analytics. These samples show how to add information sources.</p>
+        </section>
+        
+        <section class="tagged tag-AEM">
+            <h2>AEM Admin Extensions</h2>
+            
+            <a href="https://github.com/Adobe-Marketing-Cloud/aem-admin-extension-new-console" target="_blank">
+                <h3>AEM Add Administration Console</h3>
+            </a>
+            <p>This is a sample package showing how to add a new AEM 6 admin console. This package provides a UI for managing Launches and adds a link in the navigation..</p>
+            <a href="https://github.com/Adobe-Marketing-Cloud/aem-admin-extension-customize-sites" target="_blank">
+                <h3>AEM Custom Administration Console</h3>
+            </a>
+            <p>This is a sample package showing how to customize an existing AEM 6 admin console. This package provides updates to Sites administration.</p>
+            <a href="https://github.com/Adobe-Marketing-Cloud/experiencemanager-workflow-samples" target="_blank">
+                <h3>AEM Workflow Samples</h3>
+            </a>
+            <p>Workflow Task samples for Adobe Experience Manager (Adobe CQ). The workflow engine allows to be extended with custom tasks. These samples show how to extend workflows.</p>
+        </section>
+        
+        
+        <section class="tagged tag-AEM tag-AEM-integrations tag-integrations">
+            <h2>AEM Integrations</h2>
+            
+            <a href="https://github.com/Adobe-Marketing-Cloud/cq-java-hybris-extensions" target="_blank">
+                <h3>AEM Extending the CQ Hybris connector</h3>
+            </a>
+            <p>This project shows how to extend/customize the Hybris connector</p>
+            <a href="https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-emailprovider" target="_blank">
+                <h3>AEM SDK for Email Service Providers (5.6)</h3>
+            </a>
+            <p>Java SDK for Adobe Experience Manager (Adobe CQ) to integrate an external Email Service Provider. The SDK covers email authoring, publishing and subscriber/list management.</p>
         </section>
         
     </div>

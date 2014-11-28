@@ -1,0 +1,6 @@
+# Site settings
+title: Adobe Marketing Cloud open development
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+blog-title: "Blog"
+blog-description: "Tips, Tricks and Tales from the Marketing Cloud developer trenches."

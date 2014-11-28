@@ -1,0 +1,34 @@
+{% include blog/hero-wrapper.html %}
+
+<div id="sub-hero-wrapper">
+    <div id="blog-content" class="row blog-row">
+        <div class="large-10 columns collapse content">
+            
+            
+            <div class="row">
+                <div class="post-info medium-3 large-3 columns">
+                    <span class="post-date"><a href="{{ post.url | prepend: site.baseurl }}">{{ page.date | date: "%B %-d, %Y" }}</a></span>
+                    <span class="post-author"><a href="">{{ page.author }}</a></span>
+
+                    <!--span class="category post-tags news"><a href="http://blog.brackets.io/category/news/">news</a></span-->
+                </div>
+                <div class="post medium-9 large-9 columns">
+                    
+                    <h1>{{ page.title }}</h1>
+                    
+                    <div>{{ content }}</div>
+
+                    <!--p class="comment-count"><a class="button radius secondary" href="#comments">36 Responses</a>
+                    </p-->
+
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="large-2 columns">
+        </div>
+        
+    </div>
+</div>
