@@ -289,6 +289,15 @@ blockquote p {
     color:#fff;
 }
 
+@media only screen and (max-width: 23.063em) {
+    #hero h1 {
+        font-size:1.3em;
+    }
+    #hero p {
+        display: none;
+    }
+}
+
 #download p {
     width: 370px;
 }
