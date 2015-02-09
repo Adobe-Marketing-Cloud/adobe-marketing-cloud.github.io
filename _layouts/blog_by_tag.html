@@ -1,0 +1,78 @@
+---
+layout: base
+---
+
+<div id="content-posts" class="row" style="margin-top:80px;">
+    <div class="large-10 columns">
+        
+        <section class="tagged tag-Tools">
+            
+            <h2>Posts by tag : {{ page.tag }}</h2>
+            {% if site.tags[page.tag] %}
+                {% for post in site.tags[page.tag] %}
+    
+                    <article id="{{ post.full_name | slugify }}" class="article">
+                        <a class="project-url" href="">
+                            <h3 class="project-title">{{ post.title }}</h3>
+                        </a>
+                        <ul class="blog-post-meta">
+                            <li class="meta-item meta-author">
+                                <img alt="" class="author-avatar" src="" width="20" height="20"> 
+                                <a href=""><span class="author-name"></span></a>
+                            </li>
+                            <li class="meta-item">
+                                <img alt="" src="{{ '/img/amc/tag.png'  | prepend: site.baseurl }}" width="16" height="16"/>
+                                {% for tag in post.tags %}
+                                    <a href="{{ '/tag'  | prepend: site.baseurl }}/{{ tag | slugify }}">{{ tag }}</a>,&nbsp;
+                                {% endfor %}
+                            </li>
+                        </ul>
+                        <p class="project-description"></p>
+                    </article>
+    
+                {% endfor %}
+            
+            {% else %}
+                <p>There are no posts for this tag.</p>
+            {% endif %}
+            
+        </section>
+        
+    </div>
+    
+        <div class="large-2 columns">
+            <h2>Tags</h2>
+        <ul class="blog-menu">
+            <li class="design                       ">
+                <a href="{{ '/tag/tools'  | prepend: site.baseurl }}">
+                    Tools                </a>
+            </li>
+                        <li class="events                       ">
+                <a href="{{ '/tag/analytics'  | prepend: site.baseurl }}">
+                    Analytics                </a>
+            </li>
+                        <li class="extensions                       ">
+                <a href="{{ '/tag/aem'  | prepend: site.baseurl }}">
+                    AEM                </a>
+            </li>
+                        <li class="news                       ">
+                <a href="{{ '/tag/mobile'  | prepend: site.baseurl }}">
+                    Mobile                </a>
+            </li>
+                        <li class="releases                       ">
+                <a href="{{ '/tag/sdk'  | prepend: site.baseurl }}">
+                    SDK                </a>
+            </li>
+                        <li class="research                       ">
+                <a href="{{ '/tag/example'  | prepend: site.baseurl }}">
+                    Example                </a>
+            </li>
+                    </ul>
+        </div>
+    
+</div>
+
+            
+{% for post in site.tags[page.tag] %}
+    <script>getGithubData("{{ post.full_name | slugify }}", "{{ post.full_name }}");</script>
+{% endfor %}

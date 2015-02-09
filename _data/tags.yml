@@ -1,0 +1,42 @@
+- slug: tools
+  name: Tools
+  
+- slug: api
+  name: API
+  
+- slug: aem
+  name: AEM
+
+- slug: analytics
+  name: Analytics
+ 
+- slug: mobile
+  name: Mobile
+ 
+- slug: php
+  name: PHP
+ 
+- slug: example
+  name: Example
+ 
+- slug: sightly
+  name: Sightly
+ 
+- slug: node
+  name: Node
+ 
+- slug: sdk
+  name: SDK
+ 
+- slug: java
+  name: Java
+ 
+- slug: javascript
+  name: Javascript
+ 
+- slug: phonegap
+  name: PhoneGap
+ 
+- slug: r
+  name: R
+ 
