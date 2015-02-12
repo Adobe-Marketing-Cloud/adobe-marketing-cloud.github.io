@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.5;
     margin: 0;
 }
@@ -1040,4 +1040,37 @@ pre > code {
     #hero img {
         display:none;
     }
+}
+
+    .blog-post-meta {
+        list-style: outside none none;
+        margin-top:5px;
+        margin-bottom:5px;
+        color: #999;
+        font-size:90%;
+    }
+    .blog-post-meta ul, .blog-post-meta ol {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+    .blog-post-meta .meta-item {
+    display: inline;
+    padding-right: 20px;
+}
+    .blog-post-meta {
+    list-style: outside none none;
+    color: #999;
+}
+.blog-post-meta a {
+    color: #999;
+}
+    .blog-post-meta .octicon, .blog-post-meta .author-avatar {
+    border-radius: 3px;
+}
+article {
+margin-bottom:40px;
+}
+#content-posts {
+    margin-top:30px;
 }
