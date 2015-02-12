@@ -32,14 +32,14 @@
             
             {% for post in site.posts %}
 
-            <article id="{{ post.full_name | slugify }}" class="article">
-                <a class="project-url" href="">
+            <article id="{{ post.github_owner }}-{{ post.github_repository }}" class="article">
+                <a class="project-url" href="http://github.com/{{ post.github_owner }}/{{ post.github_repository }}">
                     <h3 class="project-title">{{ post.title }}</h3>
                 </a>
                 <ul class="blog-post-meta">
                     <li class="meta-item meta-author">
-                        <img alt="" class="author-avatar" src="" width="20" height="20"> 
-                        <a href=""><span class="author-name"></span></a>
+                        <img alt="" class="author-avatar" src="{{ post.author_avatar_url }}" width="20" height="20"> 
+                        <a href="http://github.com/{{ post.github_owner }}"><span class="author-name">{{ post.github_owner }}</span></a>
                     </li>
                     <li class="meta-item">
                         <img alt="" src="{{ '/img/amc/tag.png'  | prepend: site.baseurl }}" width="16" height="16"/>
@@ -48,7 +48,7 @@
                         {% endfor %}
                     </li>
                 </ul>
-                <p class="project-description"></p>
+                <div>{{ post.content | truncatewords:300}}</div>
             </article>
             
             {% endfor %}
@@ -88,8 +88,3 @@
     
     
 </div>
-
-            
-{% for post in site.posts %}
-    <script>getGithubData("{{ post.full_name | slugify }}", "{{ post.full_name }}");</script>
-{% endfor %}
