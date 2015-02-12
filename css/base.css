@@ -1058,6 +1058,10 @@ pre > code {
     display: inline;
     padding-right: 20px;
 }
+.blog-post-meta .meta-tags img {
+    position:relative;
+    bottom:3px;
+}
     .blog-post-meta {
     list-style: outside none none;
     color: #999;
