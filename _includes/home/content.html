@@ -25,10 +25,42 @@
     </div>
 </div>
 
+<div class="row" style="padding-top:40px;">
+<div class="columns blog-menu">
+        <ul class="blog-menu">
+            <li><img alt="tags" src="{{ '/img/amc/tag.png'  | prepend: site.baseurl }}" width="16" height="16"/></li>
+            <li class="design                       ">
+                <a href="{{ '/tag/tools'  | prepend: site.baseurl }}">
+                    Tools                </a>
+            </li>
+                        <li class="events                       ">
+                <a href="{{ '/tag/analytics'  | prepend: site.baseurl }}">
+                    Analytics                </a>
+            </li>
+                        <li class="extensions                       ">
+                <a href="{{ '/tag/aem'  | prepend: site.baseurl }}">
+                    AEM                </a>
+            </li>
+                        <li class="news                       ">
+                <a href="{{ '/tag/mobile'  | prepend: site.baseurl }}">
+                    Mobile                </a>
+            </li>
+                        <li class="releases                       ">
+                <a href="{{ '/tag/sdk'  | prepend: site.baseurl }}">
+                    SDK                </a>
+            </li>
+                        <li class="research                       ">
+                <a href="{{ '/tag/example'  | prepend: site.baseurl }}">
+                    Example                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
 <div id="content-posts" class="row">
     <div class="large-10 columns">
         
-        <section class="tagged tag-Tools">
+        <section>
             
             {% for post in site.posts %}
 
@@ -56,6 +88,7 @@
         </section>
     </div>
     
+<!--
         <div class="large-2 columns">
             <h2>Tags</h2>
         <ul class="blog-menu">
@@ -85,6 +118,7 @@
             </li>
                     </ul>
         </div>
+-->
     
     
 </div>

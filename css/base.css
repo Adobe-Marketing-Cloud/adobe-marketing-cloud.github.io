@@ -811,11 +811,7 @@ code {
         hyphens: auto;
 }
 
-.blog-menu {
-    padding-bottom: 40px;
-}
-
-.blog-menu a {
+.blog-menu a, .blog-menu li {
     color: #000000;
     font: 300 18px / 36px adobe-clean-semilight, source-sans-pro, sans-serif;
 }
@@ -1077,4 +1073,8 @@ margin-bottom:40px;
 }
 #content-posts {
     margin-top:30px;
+}
+.blog-menu li {
+    float:left;
+    margin-right:20px;
 }
