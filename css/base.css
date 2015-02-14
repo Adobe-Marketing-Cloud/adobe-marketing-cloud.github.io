@@ -256,18 +256,21 @@ blockquote p {
 
 #hero {
     color: #fff;
-/*    height: 245px;*/
+    height: 600px;
+    text-align: center;
 /*    padding-bottom: 30px;*/
 }
-
+    
 #hero h1 {
+    text-shadow: 1px 1px 3px #000;
     color: #fff;
+    margin:auto;
 /*    margin: 0;*/
-    padding: 1em 0 0;
+    padding: 2em 0 0.3em 0;
 /*    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);*/
     font-family: "adobe-clean-semilight","HelveticaNeue-Light",Helvetica,Arial,sans-serif;
     font-weight: 300;
-    font-size:2.6rem;
+    font-size:4rem;
     margin-bottom: 30px;
 /*
     color: #FFF;
@@ -280,13 +283,10 @@ blockquote p {
 */
 }
 
-#hero p {
-    font-size: 1.3em;
-/*    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);*/
-    width: 480px;
-    line-height: 1.6em;
-/*    color: #dedede;*/
-    color:#fff;
+#hero p > a {
+    font-size: 14px;
+    margin-right: 1em;
+    color: #fff;
 }
 
 @media only screen and (max-width: 23.063em) {
@@ -319,12 +319,16 @@ blockquote p {
 }
 
 #hero-cta-button {
-    background: #2D2E30;
-    color: #8fddff;
+/*    background: #2D2E30;*/
+    color: #ffffff;
 }
 
 #hero-cta-button:active {
     background: #000;
+}
+
+#hero-cta-button div {
+    text-align: center;
 }
 
 #os-alert {
@@ -616,7 +620,8 @@ blockquote p {
 /*    background: linear-gradient(#ECEDED, #ECEDED) repeat scroll 0% 0%, url('../img/amc/bg_texture.jpg') repeat scroll 0% 0% transparent;*/
 /*    background-blend-mode: multiply;*/
 /*    background: none repeat scroll 0% 0% #2D3033;*/
-    background: none repeat scroll 0% 0% #27A1C5;
+/*    background: none repeat scroll 0% 0% #27A1C5;*/
+    background: url("../img/amc/blur-2.jpg") no-repeat scroll center top / cover transparent;
 }
 
 .brackets-logo i {
@@ -1077,4 +1082,21 @@ margin-bottom:40px;
 .blog-menu li {
     float:left;
     margin-right:20px;
+}
+
+@media only screen and (max-width: 60.063em) {
+    #hero h1 {
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width: 30.063em) {
+    .no-small {
+        display: none;
+    }
+    #hero {
+        height: 400px;
+    }
+    #hero h1 {
+        font-size: 2em;
+    }
 }
