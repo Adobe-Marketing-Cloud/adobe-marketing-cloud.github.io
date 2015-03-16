@@ -46,3 +46,15 @@
 - slug: testing
   name: Testing
  
+- slug: content
+  name: Content
+ 
+- slug: replication
+  name: Replication
+ 
+- slug: backup
+  name: Backup
+ 
+- slug: gradle
+  name: Gradle
+ 
