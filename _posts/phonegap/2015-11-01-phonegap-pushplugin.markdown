@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cordova Push Notifications Plugin"
-date:   2015-04-07 14:29:55
+date:   2015-01-07 14:29:55
 tags: [PhoneGap]
 author_avatar_url: https://pbs.twimg.com/profile_images/1451965535/BuildBot-square_400x400.png
 github_owner: phonegap-build
