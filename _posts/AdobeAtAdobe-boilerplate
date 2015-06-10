@@ -1,0 +1,10 @@
+
+layout: post
+title:  "Adobe At Adobe AEM project boilerplate"
+date:   2015-06-09 21:37:00
+tags: [AEM, Example ]
+author_avatar_url: https://s.gravatar.com/avatar/b8098dc4c73b8e3184a17755f0a914fc?s=80
+github_owner: AdobeAtAdobe
+github_repository: aaa-aem-boilerplate
+
+This is our Adobe At Adobe AEM boilerplate for new projects. This boilerplate builds on the maven multi module archetype and some of the published Adobe standards. This is our boilerplate based on our preferences within our team.
