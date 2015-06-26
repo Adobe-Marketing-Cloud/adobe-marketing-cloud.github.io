@@ -3,7 +3,7 @@ layout: post
 title:  "PhoneGap Developer App"
 date:   2015-04-07 14:30:55
 tags: [PhoneGap, Tools]
-author_avatar_url: https://pbs.twimg.com/profile_images/1179422400/phonegap_dp2_400x400.png
+author_avatar_url: https://avatars1.githubusercontent.com/u/60365?v=3&s=200
 github_owner: phonegap
 github_repository: phonegap-app-developer
 ---
