@@ -4,4 +4,3 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 blog-title: "Open Developer"
 blog-description: "Tips, Tricks and Tales from the Marketing Cloud developer trenches."
-relative_permalinks: true
