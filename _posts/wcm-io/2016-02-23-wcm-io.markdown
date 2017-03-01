@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "wcm.io WCM - Extensions for AEM authoring and AEM applications."
+date:   2016-02-23 16:45:00
+tags: [AEM, Tools]
+author_avatar_url: http://wcm.io/images/favicon-16@3x.png
+github_owner: wcm-io
+github_repository: wcm-io-samples
+---
+
+[wcm.io](http://wcm.io) is an Open Source project which provides libraries and extensions for AEM-based applications
+
+wcm.io is a collection of independent modules which can be used standalone or in combination.
+
+Overview of modules by category:
+
+* [WCM](http://wcm.io/wcm/) - Extensions for AEM authoring and AEM applications
+* [DAM](http://wcm.io/dam/) - Assets (DAM) extensions for AEM applications
+* [Configuration](http://wcm.io/config/) - Context-specific configuration for AEM applications
+* [Handler](http://wcm.io/handler/) - Link, Media and RichText Handler infrastructure
+* [Sling](http://wcm.io/sling/) - wcm.io extensions for Apache Sling features.
+* [Testing](http://wcm.io/testing/) - Helper tools for supporting Unit Tests, Integration test and test automation in AEM-based projects.
+* [Samples](http://wcm.io/samples/) - Sample application to demonstrate the usage of the wcm.io handler infrastructure and other wcm.io Features
+* [Tooling](http://wcm.io/tooling/) - Tooling for Maven and IDEs
+
+Talk from [adaptTo()](http://adapt.to) 2015: [Building AEM applications with wcm.io](http://adapt.to/2015/en/schedule/building-aem-applications-with-wcm-io.html).
