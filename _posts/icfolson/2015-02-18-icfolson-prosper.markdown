@@ -3,8 +3,8 @@ layout: post
 title:  "Prosper"
 date:   2015-02-12 14:29:54
 tags: [AEM, Tools, Testing]
-author_avatar_url: https://pbs.twimg.com/profile_images/1857098986/citytech-twitter-avatar_400x400.jpg
-github_owner: Citytechinc
+author_avatar_url: https://avatars3.githubusercontent.com/u/527429?v=3&s=200
+github_owner: ICF Olson
 github_repository: prosper
 ---
 

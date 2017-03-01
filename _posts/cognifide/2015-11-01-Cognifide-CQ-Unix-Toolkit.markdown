@@ -4,7 +4,7 @@ title:  "CQ Unix Toolkit"
 date:   2015-02-12 15:28:55
 tags: [AEM, Tools]
 categories: [Cognifide]
-author_avatar_url: https://pbs.twimg.com/profile_images/459253580101201920/prQ2K63O_normal.png
+author_avatar_url: https://avatars2.githubusercontent.com/u/932257?v=3&s=200
 github_owner: Cognifide
 github_repository: CQ-Unix-Toolkit
 ---

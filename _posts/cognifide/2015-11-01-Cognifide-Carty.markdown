@@ -3,7 +3,7 @@ layout: post
 title:  "Carty"
 date:   2015-04-07 16:30:55
 tags: [AEM, Tools]
-author_avatar_url: https://pbs.twimg.com/profile_images/459253580101201920/prQ2K63O_normal.png
+author_avatar_url: https://avatars2.githubusercontent.com/u/932257?v=3&s=200
 github_owner: Cognifide
 github_repository: Carty
 ---
