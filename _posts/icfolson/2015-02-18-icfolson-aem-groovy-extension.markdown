@@ -4,7 +4,7 @@ title:  "AEM Groovy Extension"
 date:   2015-01-18 13:30:55
 tags: [AEM]
 author_avatar_url: https://avatars3.githubusercontent.com/u/527429?v=3&s=200
-github_owner: ICF Olson
+github_owner: OlsonDigital
 github_repository: aem-groovy-extension
 ---
 

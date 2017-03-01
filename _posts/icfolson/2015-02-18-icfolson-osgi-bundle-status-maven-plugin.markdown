@@ -4,7 +4,7 @@ title:  "OSGi Bundle Status Maven Plugin"
 date:   2015-02-12 14:29:54
 tags: [AEM, Tools]
 author_avatar_url: https://avatars3.githubusercontent.com/u/527429?v=3&s=200
-github_owner: ICF Olson
+github_owner: Citytechinc
 github_repository: osgi-bundle-status-maven-plugin
 ---
 
